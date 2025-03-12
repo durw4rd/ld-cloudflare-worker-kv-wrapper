@@ -7,7 +7,7 @@ This worker includes a KV store wrapper that counts the number of reads and cach
 ### How to run
 
 1. Clone the repository
-2. Update the `wrangler.jsonc` file with your own `LaunchDarkly client side ID` and `kv_namespaces` details. 
+2. Update the `wrangler.jsonc` file with your own `LD_CLIENT_SIDE_ID` and `kv_namespaces` details. 
 3. Run `npx wrangler dev --remote`
 4. Make a request to the worker at `http://localhost:8787`. You should see the flag data printed on the screen together with the number of KV reads.
 
